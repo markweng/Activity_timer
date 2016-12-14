@@ -15,6 +15,8 @@
 		E02155EF1DFFE512006CB92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02155ED1DFFE512006CB92D /* LaunchScreen.storyboard */; };
 		E02155FA1DFFE512006CB92D /* Timer_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E02155F91DFFE512006CB92D /* Timer_demoTests.m */; };
 		E02156051DFFE512006CB92D /* Timer_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E02156041DFFE512006CB92D /* Timer_demoUITests.m */; };
+		E02156171DFFF1D2006CB92D /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E02156161DFFF1D2006CB92D /* DataCenter.m */; };
+		E021561A1DFFF388006CB92D /* MyFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02156191DFFF388006CB92D /* MyFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		E02156001DFFE512006CB92D /* Timer_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Timer_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02156041DFFE512006CB92D /* Timer_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Timer_demoUITests.m; sourceTree = "<group>"; };
 		E02156061DFFE512006CB92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02156151DFFF1D2006CB92D /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		E02156161DFFF1D2006CB92D /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		E02156181DFFF388006CB92D /* MyFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFooterView.h; sourceTree = "<group>"; };
+		E02156191DFFF388006CB92D /* MyFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFooterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				E02155E31DFFE512006CB92D /* AppDelegate.m */,
 				E02155E51DFFE512006CB92D /* ViewController.h */,
 				E02155E61DFFE512006CB92D /* ViewController.m */,
+				E02156181DFFF388006CB92D /* MyFooterView.h */,
+				E02156191DFFF388006CB92D /* MyFooterView.m */,
+				E02156151DFFF1D2006CB92D /* DataCenter.h */,
+				E02156161DFFF1D2006CB92D /* DataCenter.m */,
 				E02155E81DFFE512006CB92D /* Main.storyboard */,
 				E02155EB1DFFE512006CB92D /* Assets.xcassets */,
 				E02155ED1DFFE512006CB92D /* LaunchScreen.storyboard */,
@@ -207,7 +217,7 @@
 				TargetAttributes = {
 					E02155DB1DFFE512006CB92D = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = MRK9X6UDAK;
+						DevelopmentTeam = KJ42GDF345;
 						ProvisioningStyle = Automatic;
 					};
 					E02155F41DFFE512006CB92D = {
@@ -277,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02155E71DFFE512006CB92D /* ViewController.m in Sources */,
+				E021561A1DFFF388006CB92D /* MyFooterView.m in Sources */,
+				E02156171DFFF1D2006CB92D /* DataCenter.m in Sources */,
 				E02155E41DFFE512006CB92D /* AppDelegate.m in Sources */,
 				E02155E11DFFE512006CB92D /* main.m in Sources */,
 			);
@@ -427,7 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MRK9X6UDAK;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KJ42GDF345;
 				INFOPLIST_FILE = Timer_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wong.t.c.h.Timer-demo";
@@ -439,7 +452,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MRK9X6UDAK;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KJ42GDF345;
 				INFOPLIST_FILE = Timer_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wong.t.c.h.Timer-demo";
@@ -516,6 +530,7 @@
 				E021560B1DFFE512006CB92D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E021560C1DFFE512006CB92D /* Build configuration list for PBXNativeTarget "Timer_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +539,7 @@
 				E021560E1DFFE512006CB92D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E021560F1DFFE512006CB92D /* Build configuration list for PBXNativeTarget "Timer_demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +548,7 @@
 				E02156111DFFE512006CB92D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
